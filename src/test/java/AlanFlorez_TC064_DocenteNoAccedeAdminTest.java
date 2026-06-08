@@ -24,6 +24,18 @@
 //           -> Autenticacion exitosa
 //   PASO 5. Navegar a /docente
 //           -> Acceso al modulo de docente funciona correctamente
+//
+// Historia de Usuario:
+//   Como docente autenticado en el sistema, quiero que el sistema me impida
+//   acceder a las rutas del modulo de administracion, para mantener la
+//   separacion de roles y proteger las funciones administrativas de la
+//   plataforma de accesos no autorizados.
+//
+// Resultado Esperado:
+//   El sistema redirige al docente fuera de /admin/cursos sin mostrar el
+//   panel administrativo, y al mismo tiempo le permite acceder correctamente
+//   a su propio modulo en /docente confirmando que su rol tiene los permisos
+//   adecuados para esa ruta.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=AlanFlorez_TC064_DocenteNoAccedeAdminTest

@@ -27,6 +27,17 @@
 //           -> El sistema muestra error indicando que las contrasenas no coinciden
 //   PASO 5. Ingresar contrasenas iguales y hacer clic en confirmar
 //           -> El sistema actualiza la contrasena exitosamente
+//
+// Historia de Usuario:
+//   Como usuario que esta cambiando su contrasena, quiero que el sistema
+//   valide que ambos campos de nueva contrasena sean identicos, para evitar
+//   guardar una contrasena diferente a la que intente establecer.
+//
+// Resultado Esperado:
+//   El sistema muestra un mensaje de error indicando que las contrasenas
+//   no coinciden cuando los campos nueva_password y confirmar_password
+//   tienen valores distintos, impidiendo el guardado hasta que ambos
+//   campos sean identicos.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=JuanJose_TC012_CambioPasswordCoincidenciaTest

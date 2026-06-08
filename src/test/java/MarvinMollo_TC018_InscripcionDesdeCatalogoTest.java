@@ -27,6 +27,17 @@
 //           -> El sistema procesa la solicitud
 //   PASO 5. Observar el estado del curso
 //           -> El boton cambia a 'Inscrito' o similar, confirmando la inscripcion
+//
+// Historia de Usuario:
+//   Como estudiante autenticado, quiero poder preinscribirme en un curso
+//   disponible directamente desde el catalogo, para agregar cursos de
+//   interes a mi carrito y proceder al pago en el momento que desee.
+//
+// Resultado Esperado:
+//   El sistema permite al estudiante hacer clic en el boton de preinscripcion,
+//   agrega el curso al carrito de preinscripciones, y confirma la accion
+//   cambiando el estado del boton a "En el carrito" / "Inscrito" o mostrando
+//   un toast de confirmacion indicando que el curso fue procesado.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=MarvinMollo_TC018_InscripcionDesdeCatalogoTest

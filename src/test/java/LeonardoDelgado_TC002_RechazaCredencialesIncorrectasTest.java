@@ -24,6 +24,16 @@
 //   PASO 5. Hacer clic en el boton 'Ingresar'
 //           -> El sistema muestra un mensaje de error indicando
 //              credenciales invalidas y no permite el acceso
+//
+// Historia de Usuario:
+//   Como usuario que ingresa credenciales erroneas, quiero que el sistema
+//   me muestre un mensaje de error claro, para saber que mis datos son
+//   incorrectos y no ser autenticado accidentalmente.
+//
+// Resultado Esperado:
+//   El sistema rechaza el acceso, mantiene el modal de login abierto,
+//   no genera token JWT y muestra un mensaje visible indicando que las
+//   credenciales son invalidas o incorrectas.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=LeonardoDelgado_TC002_RechazaCredencialesIncorrectasTest

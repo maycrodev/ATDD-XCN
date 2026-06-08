@@ -27,6 +27,17 @@
 //           -> El sistema redirige de vuelta a /cambiar-password bloqueando el acceso
 //   PASO 6. Ingresar la nueva contrasena y confirmarla
 //           -> El sistema actualiza la contrasena y redirige al home del usuario
+//
+// Historia de Usuario:
+//   Como docente que inicia sesion por primera vez, quiero ser redirigido
+//   automaticamente a cambiar mi contrasena temporal, para garantizar la
+//   seguridad de mi cuenta desde el primer acceso.
+//
+// Resultado Esperado:
+//   El sistema detecta el flag debe_cambiar_password, redirige al usuario
+//   a /cambiar-password, bloquea la navegacion a otras rutas hasta que se
+//   realice el cambio, y procesa exitosamente el nuevo password o muestra
+//   un mensaje de error explicito si las reglas del backend lo rechazan.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=LeonardoDelgado_TC003_CambioPasswordPrimeraVezTest

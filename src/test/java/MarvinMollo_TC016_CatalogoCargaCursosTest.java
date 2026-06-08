@@ -25,6 +25,16 @@
 //           -> Informacion de cursos completa y visible
 //   PASO 5. Observar el tiempo de carga
 //           -> El catalogo carga en menos de 3 segundos
+//
+// Historia de Usuario:
+//   Como estudiante autenticado, quiero ver el catalogo completo de cursos
+//   disponibles al navegar a /cursos, para poder explorar la oferta
+//   academica y decidir en cual curso deseo inscribirme.
+//
+// Resultado Esperado:
+//   El catalogo carga en menos de 3 segundos, muestra al menos una tarjeta
+//   (.curso-catalogo-card) con nombre y banner visual para cada curso, y
+//   la lista de cursos es visible con informacion completa y sin errores.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=MarvinMollo_TC016_CatalogoCargaCursosTest

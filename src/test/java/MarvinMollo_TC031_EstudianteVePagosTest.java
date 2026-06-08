@@ -25,6 +25,17 @@
 //           -> Informacion correcta
 //   PASO 5. Verificar que el layout es correcto
 //           -> Pagina bien estructurada sin errores visuales
+//
+// Historia de Usuario:
+//   Como estudiante que ha realizado pagos en la plataforma, quiero poder
+//   consultar el historial de mis pagos en /estudiante/pagos, para tener
+//   un registro claro de las inscripciones pagadas y su estado actual.
+//
+// Resultado Esperado:
+//   La pagina /estudiante/pagos carga correctamente sin redireccion, muestra
+//   informacion de pagos con detalles de monto y estado (pagado/pendiente),
+//   no presenta errores de servidor (500/403) y el layout esta estructurado
+//   correctamente con el header presente.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=MarvinMollo_TC031_EstudianteVePagosTest

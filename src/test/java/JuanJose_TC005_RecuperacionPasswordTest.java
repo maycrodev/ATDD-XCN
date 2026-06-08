@@ -33,6 +33,17 @@
 //           -> El sistema muestra el formulario para ingresar nueva contrasena
 //   PASO 6. [MANUAL] Ingresar y confirmar la nueva contrasena, luego enviar
 //           -> El sistema actualiza la contrasena y muestra mensaje de exito
+//
+// Historia de Usuario:
+//   Como usuario que olvido su contrasena, quiero poder solicitar un codigo
+//   de recuperacion a mi correo electronico registrado, para poder
+//   restablecer el acceso a mi cuenta de forma segura.
+//
+// Resultado Esperado:
+//   El sistema muestra el formulario de recuperacion al hacer clic en
+//   "¿Olvidaste tu contrasena?", acepta el correo ingresado, envia el
+//   codigo OTP y presenta la pantalla de ingreso del codigo de 6 digitos
+//   como confirmacion de que el correo fue enviado correctamente.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=JuanJose_TC005_RecuperacionPasswordTest
