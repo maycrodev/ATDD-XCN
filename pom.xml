@@ -14,32 +14,38 @@
     <description>Pruebas de Aceptacion (ATDD) - XCollegeNexus - Entregable 6</description>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- JDK 21 (Temurin) — toolchain del estudiante -->
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-        <!-- TestNG: framework de pruebas -->
+        <!-- TestNG: framework de pruebas (compatible con JDK 21) -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.8.1</version>
+            <version>7.10.2</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- Selenium WebDriver: automatizacion del navegador -->
+        <!-- Selenium WebDriver 4.x: automatizacion del navegador.
+             Selenium 4 es el estandar actual y es compatible con JDK 17/21.
+             La API publica (By, WebDriver, WebElement, etc.) es la misma que
+             en Selenium 3.141, por lo que el codigo de los tests no cambia. -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>4.25.0</version>
         </dependency>
 
-        <!-- WebDriverManager: gestion automatica del driver de Chrome -->
+        <!-- WebDriverManager: gestion automatica del driver de Chrome.
+             Detecta la version de Chrome instalada y descarga el chromedriver
+             correspondiente. -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.5.2</version>
+            <version>5.9.2</version>
         </dependency>
     </dependencies>
 
@@ -48,7 +54,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.5.0</version>
             </plugin>
         </plugins>
     </build>
