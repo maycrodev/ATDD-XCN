@@ -1,5 +1,5 @@
 /****************************************************************/
-// Caso de Prueba del 
+// Caso de Prueba 
 // (TestLink): TC-018
 // External ID: 99
 // Suite: Modulo 2 - Catalogo de Cursos
