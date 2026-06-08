@@ -1,5 +1,5 @@
 /****************************************************************/
-// Caso de Prueba del Entregable #2 (TestLink): TC-016
+// Caso de Prueba (TestLink): TC-016
 // External ID: 97
 // Suite: Modulo 2 - Catalogo de Cursos
 // Integrante: Marvin Mollo
@@ -66,8 +66,8 @@ public class MarvinMollo_TC016_CatalogoCargaCursosTest {
         // Limpiamos sesion previa: cookie auth_token + storages
         ((JavascriptExecutor) driver).executeScript(
                 "document.cookie = 'auth_token=; path=/; max-age=0; SameSite=Strict';"
-                + "window.localStorage.clear();"
-                + "window.sessionStorage.clear();");
+                        + "window.localStorage.clear();"
+                        + "window.sessionStorage.clear();");
         TimeUnit.SECONDS.sleep(1);
 
         /*********** Logica de la prueba ***********/
@@ -88,8 +88,8 @@ public class MarvinMollo_TC016_CatalogoCargaCursosTest {
         while (System.currentTimeMillis() - inicioMs < maxEsperaMs) {
             String body = driver.findElement(By.tagName("body")).getText().toLowerCase();
             if (body.contains("curso") &&
-                (body.contains("inscribirme") || body.contains("ver mas")
-                 || body.contains("ver más") || body.contains("detalle"))) {
+                    (body.contains("inscribirme") || body.contains("ver mas")
+                            || body.contains("ver más") || body.contains("detalle"))) {
                 catalogoCargado = true;
                 break;
             }
@@ -100,12 +100,11 @@ public class MarvinMollo_TC016_CatalogoCargaCursosTest {
 
         // PASO 3: Observar la lista de cursos
         String bodyCatalogo = driver.findElement(By.tagName("body")).getText().toLowerCase();
-        boolean listaCursosVisible =
-                bodyCatalogo.contains("curso") &&
+        boolean listaCursosVisible = bodyCatalogo.contains("curso") &&
                 (bodyCatalogo.contains("inscribirme") ||
-                 bodyCatalogo.contains("ver mas") ||
-                 bodyCatalogo.contains("ver más") ||
-                 bodyCatalogo.contains("detalle"));
+                        bodyCatalogo.contains("ver mas") ||
+                        bodyCatalogo.contains("ver más") ||
+                        bodyCatalogo.contains("detalle"));
 
         // PASO 4: Verificar que cada tarjeta tiene nombre, descripcion y banner visual.
         // En esta SPA las tarjetas (.curso-catalogo-card) usan banner con icono SVG
@@ -124,7 +123,7 @@ public class MarvinMollo_TC016_CatalogoCargaCursosTest {
         // PASO 5: Tiempo de carga < 3 segundos
         boolean tiempoBajo3s = duracionMs < 3000;
 
-        /*********** Verificacion - Assert ***********/
+        /*********** Verificacion - AssertEquals ***********/
         Assert.assertEquals(catalogoCargado, true,
                 "PASO 2: la pagina del catalogo debio cargar");
         Assert.assertEquals(listaCursosVisible, true,
@@ -138,6 +137,7 @@ public class MarvinMollo_TC016_CatalogoCargaCursosTest {
 
     @AfterTest
     public void closeDriver() {
-        if (driver != null) driver.quit();
+        if (driver != null)
+            driver.quit();
     }
 }
