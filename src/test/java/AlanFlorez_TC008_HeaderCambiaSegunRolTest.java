@@ -25,6 +25,18 @@
 //           -> Autenticacion exitosa
 //   PASO 6. Observar el header del sistema
 //           -> Se muestra el UserHeaderDynamic con opciones de administrador
+//
+// Historia de Usuario:
+//   Como usuario del sistema con un rol especifico (estudiante, docente o
+//   administrador), quiero que el header muestre unicamente las opciones
+//   correspondientes a mi rol, para tener una navegacion relevante y
+//   personalizada segun mis permisos.
+//
+// Resultado Esperado:
+//   El header muestra el HeaderEstudiante con opciones de catalogo y
+//   perfil para estudiantes; el HeaderDocente con panel de cursos asignados
+//   para docentes; y el UserHeaderDynamic con opciones de administracion
+//   para administradores.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=AlanFlorez_TC008_HeaderCambiaSegunRolTest

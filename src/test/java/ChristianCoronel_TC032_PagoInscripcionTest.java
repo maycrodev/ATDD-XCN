@@ -38,6 +38,17 @@
 //           (requiere completar PayPal Sandbox externamente)
 //   PASO 6. [MANUAL] Verificar que el pago aparece en el historial
 //           -> Nuevo pago visible en la lista con estado 'Pagado'
+//
+// Historia de Usuario:
+//   Como estudiante preinscrito en un curso, quiero poder iniciar el proceso
+//   de pago mediante PayPal, para completar mi inscripcion y acceder al
+//   contenido del curso una vez confirmado el pago.
+//
+// Resultado Esperado:
+//   El sistema autentica al estudiante, muestra cursos disponibles para
+//   preinscribirse, al hacer clic agrega el curso al carrito y presenta
+//   el boton "Proceder al pago con PayPal" o el SDK de PayPal, permitiendo
+//   continuar el flujo de pago de forma visible y accesible.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=ChristianCoronel_TC032_PagoInscripcionTest

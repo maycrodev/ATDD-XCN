@@ -24,6 +24,16 @@
 //           -> El sistema redirige a la pagina de inicio publica
 //   PASO 5. Intentar navegar a una ruta protegida (ej. /perfil)
 //           -> El sistema redirige al login, confirmando que la sesion fue cerrada
+//
+// Historia de Usuario:
+//   Como usuario autenticado, quiero poder cerrar sesion desde el menu de
+//   usuario en el header, para asegurar que mi cuenta quede protegida al
+//   terminar de usar el sistema.
+//
+// Resultado Esperado:
+//   El sistema elimina el token JWT de la cookie auth_token, redirige al
+//   usuario a la pagina publica de inicio y bloquea el acceso a rutas
+//   protegidas como /perfil confirmando que la sesion fue cerrada.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=ChristianCoronel_TC007_CerrarSesionTest

@@ -25,6 +25,18 @@
 //           -> El sistema bloquea el acceso y redirige
 //   PASO 5. Navegar a /cursos
 //           -> El sistema permite el acceso correctamente
+//
+// Historia de Usuario:
+//   Como estudiante autenticado, quiero que el sistema me bloquee el
+//   acceso a rutas exclusivas de docentes y administradores, para
+//   garantizar la separacion de roles y proteger las funciones
+//   administrativas de la plataforma.
+//
+// Resultado Esperado:
+//   El sistema bloquea el acceso a /docente, /admin/cursos y /admin/pagos
+//   para un usuario con rol estudiante redirigiendo fuera de esas rutas,
+//   mientras que permite el acceso correcto a /cursos confirmando que
+//   el control de acceso basado en roles (RBAC) funciona correctamente.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=AlanFlorez_TC013_RBACRutasSegunRolTest

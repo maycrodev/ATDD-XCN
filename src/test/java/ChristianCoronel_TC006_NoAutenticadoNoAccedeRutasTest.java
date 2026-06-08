@@ -24,6 +24,16 @@
 //           -> El sistema bloquea el acceso y redirige
 //   PASO 5. Intentar navegar a /estudiante/pagos
 //           -> El sistema bloquea el acceso y redirige
+//
+// Historia de Usuario:
+//   Como visitante no autenticado, quiero que el sistema me impida
+//   acceder a rutas protegidas, para garantizar que solo los usuarios
+//   con sesion activa puedan ver el contenido privado de la plataforma.
+//
+// Resultado Esperado:
+//   El sistema redirige al usuario fuera de /perfil, /cursos, /admin y
+//   /estudiante/pagos cuando no existe sesion activa, impidiendo cualquier
+//   acceso a contenido privado sin autenticacion previa.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=ChristianCoronel_TC006_NoAutenticadoNoAccedeRutasTest

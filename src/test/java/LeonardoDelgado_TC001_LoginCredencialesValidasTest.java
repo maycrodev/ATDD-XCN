@@ -26,6 +26,16 @@
 //   PASO 5. Hacer clic en el boton 'Ingresar'
 //           -> El sistema autentica al usuario y redirige al home
 //              correspondiente segun rol
+//
+// Historia de Usuario:
+//   Como estudiante registrado en el sistema, quiero poder iniciar sesion
+//   con mi correo y contrasena correctos, para acceder a las
+//   funcionalidades de mi cuenta de forma segura.
+//
+// Resultado Esperado:
+//   El sistema autentica al usuario exitosamente, genera un token JWT,
+//   cierra el formulario de login y redirige al home correspondiente
+//   segun el rol del usuario (estudiante, docente o administrador).
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=LeonardoDelgado_TC001_LoginCredencialesValidasTest

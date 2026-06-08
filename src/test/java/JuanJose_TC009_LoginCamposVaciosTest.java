@@ -25,6 +25,17 @@
 //           -> Solo correo ingresado
 //   PASO 6. Hacer clic en el boton 'Ingresar'
 //           -> El sistema muestra validacion de campo requerido en la contrasena
+//
+// Historia de Usuario:
+//   Como usuario que intenta iniciar sesion sin completar todos los campos,
+//   quiero que el sistema me impida enviar el formulario incompleto, para
+//   evitar enviar solicitudes invalidas al servidor y recibir retroalimentacion
+//   clara sobre los campos requeridos.
+//
+// Resultado Esperado:
+//   El sistema impide el envio del formulario cuando el campo de correo o
+//   contrasena esta vacio, mantiene el modal de login visible en ambos
+//   intentos y no realiza ninguna solicitud de autenticacion al servidor.
 /****************************************************************/
 // Para ejecutar:
 // mvn clean compile test -Dtest=JuanJose_TC009_LoginCamposVaciosTest
